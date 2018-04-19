@@ -1,0 +1,48 @@
+# Classes & Objects
+
+class Person:
+    # __ = 'private' : accessible only through Getter/Setter
+    __name = ''
+    __email = ''
+    
+    # Constructor
+    def __init__(self, name, email):
+      self.__name = name
+      self.__email = email
+
+    # 'Setter' function || 'self' = 'this'
+    def set_name(self, name):
+      self.__name = name
+    # Getter
+    def get_name(self):
+      return self.__name
+
+    def set_email(self, email):
+      self.__email = email
+
+    def get_email(self):
+      return self.__email
+
+# Class Inhertitance 
+class Customer(Person):
+    __balance = 0
+
+    def __init__(self, name, email, balance):
+      self.__name = name
+      self.__email = email
+      self.__balance = balance
+      # super: use constructor from person class
+      super(Customer, self).__init__(name, email)
+        
+    def set_balance(self, balance):
+      self.__balance = balance
+        
+    def get_balance(self):
+      return self.__balance
+    
+    def toString(self):
+      return '{} has a balance of {} and can be contacted at {}'.format(self.__name, self.__balance, self.__email)
+    
+
+kate = Customer('Kate Smith', 'ksmith@yahoo.com', 5000)
+print(kate.toString())

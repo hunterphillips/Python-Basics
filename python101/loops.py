@@ -1,8 +1,8 @@
-
+# For Loop
 people = ['John', 'sarah', 'Bill', 'Joe']
-# for loop
-# for person in people:
-#   print('Current Person', person)
+
+for person in people:
+  print('Current Person', person)
 
 # index interation
 for i in range(len(people)):

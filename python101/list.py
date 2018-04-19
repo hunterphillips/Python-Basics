@@ -1,7 +1,8 @@
-# index: return index of substr OR list item
+
+# Index: return index of substr OR list item
 print(['l', 'e'].index('e')) # -> 1
 
-# Sum: badass method to sum iterables (optional 'start' argument)
+# Sum: sum iterables (optional 'start' argument)
 someSum = sum([1, 2, 3, 4, 5])
 
 # List - new list of interable's items

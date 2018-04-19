@@ -1,8 +1,10 @@
-# variables and datatypes
+# print substr
+print("hello"[0])
+# print num
+print(3)
 
-greeting = "hello"
-greeting = "f*&&^ off"
-print(greeting)
+# print raw txt
+print(r'\\')
 
 # Datatypes
 myStr = 'hello'
