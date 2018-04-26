@@ -12,7 +12,7 @@ y = dataset.iloc[:, 3].values
 
 # Use the elbow method to find optimal # of clusters
 from sklearn.cluster import KMeans
-  # Compute width & cluster sum of squares for 10 different numbers of clusters
+  # Compute within-cluster sum of squares for 10 different numbers of clusters
   # store sums in array of values
 wcss = []
 for i in range(1, 11):
