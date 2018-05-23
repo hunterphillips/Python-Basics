@@ -12,10 +12,12 @@ someList = ['junk', 'in', 3, 'trunk', True, {'key': 'value'}]
 print(someList[1])
 someList.append('more stuff')
 
-# Sets -> unique collection
+# Sets -> unique collection, define with {} or set() function
 unique_list = {'scissors', 3, False}
 unique_list.add(3)  # prevents duplicates
 print(unique_list)
+unique_letters = set('abbacbcdcad')  # {'d', 'a', 'b', 'c'}
+print('letters', unique_letters)
 
 # tuple -> immutable list
 t = 'dog', 'cat', 'fish'
