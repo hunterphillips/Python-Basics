@@ -1,25 +1,28 @@
 # Conditionals
-
 x = 4
 
 if x < 5:
-  print(True)
+    print(True)
 
 # if else
 if x > 5:
-  print(True)
+    print(True)
 else:
-  print(False)
+    print(False)
 
 # Elif
 color = 'red'
 
 if color == 'red':
-  print('whaat')
+    print('whaat')
 elif color == 'blue':
-  print('whaa waaat')
+    print('whaa waaat')
+else:
+    print('wha wha whaaaaAAt')
 
 # And
 if color == 'red' and x < 10:
-  print('stfu')
+    print('shut up')
 
+# str interpolation
+print('the car is {0}'.format(color))  # -> The car is red
