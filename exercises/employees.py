@@ -38,4 +38,3 @@ ToysOrBust.employees.add(carrie)
 
 # print(ToysOrBust.__dict__)
 pprint(vars(ToysOrBust))
-# print(ToysOrBust.ge)
